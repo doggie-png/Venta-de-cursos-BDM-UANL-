@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/resultado-busqueda.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"  id="barra">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">Usuario</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Cursos-alumno.html">Cursos</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="mensajes.html">Mensajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reporte.html">Reporte</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Notificaciones</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search" action="resultado-busqueda.html">
+                  <input class="form-control me-2" type="search" placeholder="Que necesitas?" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" id="nav-buscar">Buscar</button>
+    
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container text-center" id="resultados">
+        <div class="row align-items-start">
+
+          <div class="col-sm-4 col-xl-4" id="filtros">
+            <h1>Filtros disponibles</h1>
+            <br>
+            <div class="insert-filtros">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Filtros aplicados
+              </button>
+              <div class="collapse" id="collapseExample5">
+                <div id="cambia-cont">
+                  
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="contenedor-filtro" id="filtro-perfil-producto">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Fecha de Publicacion
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div id="cont-producto-perfil">
+                  <div id="A-Este-mes">
+                    <div id="R-Este-mes">
+                      <button class="button-filtro" onclick="addElement('Este-mes')">Este-mes</button>
+                    </div>
+                  </div>
+
+                  <div id="A-ultimos-3-meses">
+                    <div id="R-ultimos-3-meses">
+                      <button class="button-filtro" onclick="addElement('ultimos-3-meses')">ultimos-3-meses</button>
+                    </div>
+                  </div>
+
+                  <div id="A-ultimos-6-meses">
+                    <div id="R-ultimos-6-meses">
+                      <button class="button-filtro" onclick="addElement('ultimos-6-meses')">ultimos-6-meses</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="filtro-precio">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Por precio
+              </button>
+              <div class="collapse" id="collapseExample1">
+                <div id="A-Mayor-precio">
+                  <div id="R-Mayor-precio">
+                    <button class="button-filtro" onclick="addElement('Mayor-precio')">Mayor a menor</button>
+                  </div>
+                </div>
+                <div id="A-Menor-precio">
+                  <div id= "R-Menor-precio">
+                    <button class="button-filtro" onclick="addElement('Menor-precio')">Menor a mayor</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <br>
+
+            <div class="filtro-Cant-ventas">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Cantidad de ventas
+              </button>
+              <div class="collapse" id="collapseExample2">
+                <div id="A-Mas-vendidos">
+                  <div id="R-Mas-vendidos">
+                    <button class="button-filtro" onclick="addElement('Mas-vendidos')">Mas vendidos</button>
+                  </div>
+                </div>
+
+                <div id="A-Menos-vendidos">
+                  <div id="R-Menos-vendidos">
+                    <button class="button-filtro" onclick="addElement('Menos-vendidos')">Mas vendidos</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br>
+
+            <div class="filtro-categorias">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Categorias
+              </button>
+              <div class="collapse" id="collapseExample3">
+                <div id="A-Programacion">
+                  <div id="R-Programacion">
+                    <button class="button-filtro" onclick="addElement('Programacion')">Programacion</button>
+                  </div>
+                </div>
+
+                <div id="A-Musica">
+                  <div id="R-Musica">
+                    <button class="button-filtro" onclick="addElement('Musica')">Musica</button>
+                  </div>
+                </div>
+
+                <div id="A-Edicion-de-video">
+                  <div id="R-Edicion-de-video">
+                    <button class="button-filtro" onclick="addElement('Edicion-de-video')">Edicion de video</button>
+                  </div>
+                </div>
+
+                <div id="A-Seguridad-web">
+                  <div id="R-Seguridad-web">
+                    <button class="button-filtro" onclick="addElement('Seguridad-web')">Seguridad web</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <div class="filtro-cali">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria">
+                Calificacion
+              </button>
+              <div class="collapse" id="collapseExample4">
+                <div id="A-5-estrellas">
+                  <div id="R-5-estrellas">
+                    <button class="button-filtro" onclick="addElement('5-estrellas')">5 estrellas</button>
+                  </div>
+                </div>
+
+                <div id="A-3-estrellas">
+                  <div id="R-3-estrellas">
+                    <button class="button-filtro" onclick="addElement('3-estrellas')">3 estrellas</button>
+                  </div>
+                </div>
+
+                <div id="A-1-estrella">
+                  <div id="R-1-estrella">
+                    <button class="button-filtro" onclick="addElement('1-estrella')">Papeleria</button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+          <div class="col-sm-8 col-xl-8" >
+                
+            <div class="row" >
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card" id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Programacion web</h5>
+                    <p class="card-text">Contiene 3 niveles de programacion orientada a web</p>
+                    <a href="info curso.html" class="btn btn-primary">Ver curso</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card" id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card" id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg " class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-6 col-xl-4" >
+
+                <div class="card"  id="tarjeta">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+                
+          </div>
+
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example" id="paginacion">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" id="paginacion-elem">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#" id="paginacion-elem">1</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="paginacion-elem">2</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="paginacion-elem">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" id="paginacion-elem">Next</a>
+        </li>
+      </ul>
+    </nav>
+  
+  <!--boton y ventana modal-->
+  <!--
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Notificaciones</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          No hay notificaciones nuevas
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Choose and Enjoy</h3>
+            <p> Si lo deseas, lo obtienes.
+            </p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/julio.morfin.750/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 Fenix Corp. designed by <span>DOGGIE</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

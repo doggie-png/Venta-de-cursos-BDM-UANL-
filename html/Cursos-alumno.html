@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de deseos</title>
+    <link rel="stylesheet" href="/css/Compras.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"  id="barra">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">Usuario</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                  <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Cursos-alumno.html">Cursos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mensajes.html">Mensajes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Notificaciones</a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search" action="resultado-busqueda.html">
+                  <input class="form-control me-2" type="search" placeholder="Que necesitas?" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" id="nav-buscar">Buscar</button>
+    
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--Carrito de compras-->
+    
+    <div class="container text-center" id="perfil">
+      <div class="row align-items-center">
+        <h1>Cursos adquiridos</h1>
+        <div class="col-md-12 col-lg-12"   id="listass" >
+          
+          <div class="productos">
+            
+            <div class="filtros">
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="desplegar-categoria" style="border-bottom: 3px solid black;">
+                Filtros Disponibles
+              </button>
+              <div class="collapse" id="collapseExample">
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                  <button type="button" class="btn btn-primary" id="desplegar-categoria">Mas recientes</button>
+                  <button type="button" class="btn btn-primary" id="desplegar-categoria">Mas antiguos</button>
+                  <button type="button" class="btn btn-primary" id="desplegar-categoria">Terminados</button>
+                  <button type="button" class="btn btn-primary" id="desplegar-categoria">Activos</button>
+                  <div class="btn-group dropend" role="group">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="desplegar-categoria" style="margin-bottom: 30px;border-bottom: 3px solid black;">
+                      Categorias
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Programacion Web</a></li>
+                      <li><a class="dropdown-item" href="#">Edicion de Video</a></li>
+                      <li><a class="dropdown-item" href="#">Musica</a></li>
+                      <li><a class="dropdown-item" href="#">Seguridad Web</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cont-producto">
+              <div class="cards-wrapper">
+                <div class="card-img">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="img-carrito"  alt="">
+                </div>
+                <div class="text">
+                  
+                  <h3>Curso de programacion web</h3>
+                  <h3>Estado: Completado</h3>
+                  <h3>Niveles completados: 3/3</h3>
+                  <h3>Calificacion obtenida: 10/10</h3>
+                  <h3>Fecha de inscripcion: 11/9/24</h3>
+                  <h3>Ingreso por ultima vez: 28/11/24 </h3>
+                  
+                </div>
+              </div>
+              
+              <div class="boton-producto">
+                <a href="/html/ContenidoCursos.html"><input type="button" value="Ver Curso" class="btn-carrito"> </a>               
+              </div>
+              <div class="boton-producto">
+                <a href="Kardex.html"><input type="button" value="Kardex" class="btn-carrito"></a>          
+              </div>
+              
+            </div>
+              
+
+            <div class="cont-producto">
+              <div class="cards-wrapper">
+                <div class="card-img">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="img-carrito"  alt="">
+                </div>
+                <div class="text">
+                  <h3>Curso de Seguridad Web</h3>
+                  <h3>Estado: En curso</h3>
+                  <h3>Niveles completados: 1/3</h3>
+                  <h3>Calificacion obtenida: Aun en curso</h3>
+                  <h3>Fecha de inscripcion: 11/9/24</h3>
+                  <h3>Ingreso por ultima vez: 28/9/24 </h3>
+
+                  
+                </div>
+              </div>
+              
+              <div class="boton-producto">
+                <input type="button" value="Ver Curso" class="btn-carrito">
+              </div>
+              
+            </div>
+
+            <div class="cont-producto">
+              <div class="cards-wrapper">
+                <div class="card-img">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="img-carrito"  alt="">
+                </div>
+                <div class="text">
+                  <h3>Curso de Edicion de Video</h3>
+                  <h3>Estado: Completado</h3>
+                  <h3>Niveles completados: 3/3</h3>
+                  <h3>Calificacion obtenida: 9/10</h3>
+                  <h3>Fecha de inscripcion: 11/8/24</h3>
+                  <h3>Ingreso por ultima vez: 28/10/24 </h3>
+
+                  
+                </div>
+              </div>
+              
+              <div class="boton-producto">
+                <input type="button" value="Ver Curso" class="btn-carrito">
+              </div>
+              <div class="boton-producto">
+                <input type="button" value="Kardex" class="btn-carrito">                
+              </div>
+              
+            </div>
+
+            <div class="cont-producto">
+              <div class="cards-wrapper">
+                <div class="card-img">
+                  <img src="/imagenes/Partes-de-un-escenario.jpg" class="img-carrito"  alt="">
+                </div>
+                <div class="text">
+                  <h3>Curso de Teoria Musical</h3>
+                  <h3>Estado: En curso</h3>
+                  <h3>Niveles completados: 2/3</h3>
+                  <h3>Calificacion obtenida: 10/10</h3>
+                  <h3>Fecha de inscripcion: 16/10/24</h3>
+                  <h3>Ingreso por ultima vez: 18/11/24 </h3>
+
+                  
+                </div>
+              </div>             
+              <div class="boton-producto">
+                <input type="button" value="Ver Curso" class="btn-carrito">
+              </div>             
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Notificaciones</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            No hay notificaciones nuevas
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <dialog class="Notificacion-modal" id="Noti-modal">
+      <h1>hola</h1>
+      <button onclick="closeModal()">X</button>
+    </dialog>
+    -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
