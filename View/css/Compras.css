@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Merriweather", system-ui;
+}
+body{
+    background: rgb(36,255,162);
+background: linear-gradient(0deg, rgba(36,255,162,1) 0%, rgba(239,240,134,1) 100%);
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px;
+}
+
+#img-nav{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+
+#nav-buscar{
+    
+    border: 2px solid rgba(255, 14, 14, 0.815);
+    color: white;
+}
+
+#nav-buscar:hover{
+    background-color: red;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+}
+
+.Notificacion-modal{
+    background-color: aqua;
+}
+
+#perfil{
+    background: linear-gradient(rgb(205, 255, 206), 70%, rgb(175, 251, 255));
+    transform: translateY(3%);
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    height: max-content;
+    -webkit-box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+    -moz-box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+    box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+    overflow: hidden;
+    width: 70vw;
+    
+}
+
+.productos{
+    border: 1px solid rgb(124, 207, 177);
+    box-shadow: 0 0 15px white;
+    height: 550px;
+    overflow-y: scroll;
+}
+.user img{
+    max-width: 90%;
+    max-height: 900px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+    
+}
+
+.cards-wrapper{
+    display: flex;
+    color: black;
+}
+
+.cont-producto{
+    background-color: whitesmoke;
+    border: 1px solid rgb(124, 207, 177);
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    height: 300px;
+    transform: scale(0.98);
+}
+
+.cont-producto:hover{
+    transform: scale(1);
+}
+
+.pago h1{
+    transform: translateY(-30px);
+}
+
+.text{
+    
+    width: 275%;
+    height: 180px;
+    text-align: left;
+    
+}
+
+.text h3{
+    font-size: 15px;
+}
+
+.img-carrito{
+    width: 12rem;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.img-usuarioAlumno{
+    width: 12rem;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 80%;
+    border-radius: 10px;
+}
+#Compra{
+    transform: translateX(3%);
+    text-align: center;
+    padding: 10px;
+    border: 3px solid black;
+    
+    
+}
+
+.btn-pagar{
+    border-radius: 12px;
+    width: 50%;
+    transform: scale(0.95);
+    
+}
+
+.btn-pagar:hover{
+    background-color: rgb(255, 123, 0);
+    transform: scale(1.08);
+}
+
+#listass{
+    height: max-content;
+    padding-top: 10px;
+    padding-right: 10px;
+    
+
+}
+
+.filtros{
+    margin-bottom: 20px;
+    background: rgb(161,233,204);
+    background: radial-gradient(circle, rgba(161,233,204,1) 0%, rgba(29,159,104,1) 66%, rgba(1,66,63,1) 100%);
+    -webkit-box-shadow: 0px 0px 49px 24px rgba(109,209,206,1);
+-moz-box-shadow: 0px 0px 49px 24px rgba(109,209,206,1);
+box-shadow: 0px 0px 49px 24px rgba(109,209,206,1);
+}
+
+#desplegar-categoria{
+    background-color: rgb(134, 251, 189);
+    color: black;
+    border: 3px solid black;
+    border-radius: 3px;
+    border-bottom: none;
+}
+
+#desplegar-categoria:hover{
+    background-color: rgb(17, 119, 118);
+    border: 2px solid black;
+    color: white;
+    background: rgb(161,233,204);
+    background: radial-gradient(circle, rgba(161,233,204,1) 0%, rgba(29,159,104,1) 66%, rgba(1,66,63,1) 100%);
+    -webkit-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    -moz-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+}
+
+.total{
+
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: min-content;
+    margin-left: 45%;
+    height: 70px;
+    padding: 0px 20px 0px 20px;
+
+}
+
+
+.btn-carrito{
+    border-radius: 3px;
+    width: 22%;
+    margin-right: 15px;
+    margin-top: 20px;
+    transform: scale(0.95);
+    transition: .3s ease-in-out;
+    
+}
+
+.btn-carrito:hover{
+    background-color: rgb(105, 249, 115);
+    color: white;
+    transform: scale(1.08);
+    -webkit-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    -moz-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+}
+.btn-Desh{
+    border-radius: 3px;
+    width: 25%;
+    margin-right: 15px;
+    margin-top: 20px;
+    transform: scale(0.95);
+    transition: .3s ease-in-out;
+    
+}
+
+.btn-Desh:hover{
+    background-color: rgb(232, 67, 45);
+    color: white;
+    transform: scale(1.08);
+    -webkit-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    -moz-box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+    box-shadow: 0px 0px 49px -8px rgba(109,209,206,1);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #54d06d;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #043e07;
+  }
+  .modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+.btn, .btn-primary{
+    height: 35px;
+    transform: translateY(-10px);
+} 

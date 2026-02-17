@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Merriweather", system-ui;
+}
+body{
+    
+    background: rgb(172,229,230);
+    background: linear-gradient(0deg, rgb(49, 181, 184) 0%, rgba(255,255,255,1) 100%);
+    position: relative;
+    min-height: 100vh;
+}
+#img-nav{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+}
+.contenido{
+    background-color: rgb(182, 251, 232);
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 90%;
+    border-radius: 10px;
+    gap:30px;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 32px 17px rgba(75,99,97,1);
+-moz-box-shadow: 0px 0px 32px 17px rgba(75,99,97,1);
+box-shadow: 0px 0px 32px 17px rgba(75,99,97,1);
+}
+.CursosDisponibles{
+    width: 25%;
+    background-color: rgb(216, 243, 247);
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: inherit;
+}
+.ContenidoNiveles{
+    height: 100%;
+    background-color: rgb(197, 246, 217);
+    width: 75%;
+    border-radius:0 10px 10px 0 ;
+    overflow-y: scroll;
+    display: block;
+    padding: 20px 10px 20px 10px;
+}
+.TarjCursos{
+    background-color: rgb(161, 193, 220);
+    border: 2px solid black;
+    padding: 20px 10px 20px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.ContenidoNiveles video{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+.ContenidoNiveles h2{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+}
+.ContenidoNiveles p{
+    text-align: justify;
+}
+.BTN_CtnCur{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(208, 252, 208);
+    transition: .3s ease-in-out;
+    padding: 8px 5px 8px 5px;
+}
+.BTN_CtnCur:hover{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(93, 253, 93);
+}
+.BTN_RegNivel{
+    background-color: rgb(255, 220, 220);
+    border-radius: 3px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    transition: .3s ease-in-out;
+    margin-right: 60%;
+    margin-top: 20px;
+}
+.BTN_RegNivel:hover{
+    background-color: rgb(246, 86, 86);
+    border-radius: 3px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    color: wheat;
+}
+.BTN_SeguirNivel{
+    background-color: rgb(228, 244, 172);
+    border-radius: 3px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    transition: .3s ease-in-out;
+    margin-top: 20px;
+
+}
+.BTN_SeguirNivel:hover{
+    background-color: rgb(252, 255, 72);
+    border-radius: 3px;
+    border: none;
+    padding: 15px 10px 15px 10px;
+    color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

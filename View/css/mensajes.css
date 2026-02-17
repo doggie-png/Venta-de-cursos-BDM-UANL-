@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Merriweather", system-ui;
+}
+body{
+    background: rgb(249,251,207);
+background: radial-gradient(circle, rgba(249,251,207,1) 0%, rgba(255,253,233,1) 89%, rgba(66,1,63,1) 100%);
+    position: relative;
+    height: 100vh;
+    
+}
+
+#img-nav{
+    width: 30px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#img-contacto{
+    width: 80px;
+    height: 50px;
+}
+
+.chats{
+    border: 1px solid rgb(247, 248, 213);
+    border-radius: 3px;
+    padding-right: 15px;
+    color: rgb(0, 0, 0);
+    -webkit-box-shadow: 0px 0px 49px 10px rgba(242,245,204,1);
+    -moz-box-shadow: 0px 0px 49px 10px rgba(242,245,204,1);
+    box-shadow: 0px 0px 49px 10px rgba(242,245,204,1);
+    background-color: #caf3e7;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 20px 30px 20px 30px;
+    -webkit-box-shadow: 0px 0px 49px 10px rgba(96,138,138,1);
+-moz-box-shadow: 0px 0px 49px 10px rgba(96,138,138,1);
+box-shadow: 0px 0px 49px 10px rgba(96,138,138,1);
+}
+
+.contacto{
+    display: flex;
+    border: 3px solid rgb(79, 86, 85);
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-bottom: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    
+}
+
+.usuario{
+    margin-left: 20px;
+    height: 30px;
+    transform: translateY(10px);
+}
+
+#contenedor{
+    
+    transform: translateY(10%);
+    
+}
+
+.view{
+    background-color:antiquewhite;
+    overflow-y: scroll;
+}
+
+.vendedor{
+    background-color: rgb(211, 200, 186);
+    padding-bottom: 4px;
+    
+    
+}
+
+.conversacion{
+    height: 450px;
+    
+
+
+}
+
+.mover{
+    
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+.msj-vendedor{
+    
+    background-color: aliceblue;
+    max-width: 350px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    text-align: justify;
+}
+
+.msj-comprador{
+    
+    background-color: aliceblue;
+    max-width: 350px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    text-align: justify;
+    
+}
+
+#hora{
+    font-size: small;
+    text-align: end;
+}
+
+.inputs{
+    background-color: rgb(211, 200, 186);
+    padding: 10px;
+    
+}
+
+.inputs input{
+    width: 80%;
+    border-radius: 8px;
+}
+
+.inputs #enviar{
+    width: 18%;
+    height: 30px;
+    transform: translate(10px, 0px);
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+
+.inputs #enviar:hover{
+    background-color: rgb(232, 208, 165);
+}
+
+.card-body{
+    align-items: center;
+    align-content: center;
+    box-shadow: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e5f18b;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7e7b13;
+  }

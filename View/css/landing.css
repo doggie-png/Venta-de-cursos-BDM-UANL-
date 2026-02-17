@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: "Merriweather", system-ui;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+
+}
+.container{
+    display: block;
+    background-color: #d4c6da;
+    padding: 30px 15px 30px 15px;
+    -webkit-box-shadow: 0px 0px 28px 3px rgba(91,114,130,1);
+-moz-box-shadow: 0px 0px 28px 3px rgba(91,114,130,1);
+box-shadow: 0px 0px 28px 3px rgba(91,114,130,1);
+
+    
+}
+
+.container h1{
+    width: 100%;
+    font-weight: bold;
+    animation: MOvLet 1.4s ease-in-out forwards;
+}
+
+@keyframes MOvLet {
+    0%{
+        transform: translateX(-200px) rotate(10deg) translateY(-200px);
+    }
+    100%{
+        transform: translateX(0px) rotate(0deg) translateY(0px);
+    }
+}
+#data{
+   
+    
+    height: max-content;
+    width: 70vw;
+    text-align: center;
+    transform: translateY(10%) ;
+    color: white ;
+    border-radius: 15px;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+}
+p{
+    animation: Aparece 3s ease-in-out;
+    display: flex;
+}
+P img{
+    margin-left: 30px;
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    -webkit-box-shadow: -74px 0px 229px 3px rgba(91,114,130,1);
+    -moz-box-shadow: -74px 0px 229px 3px rgba(91,114,130,1);
+    box-shadow: -74px 0px 229px 3px rgba(91,114,130,1);
+}
+@keyframes Aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+#Regis{
+    text-align: center;
+    color: white ;
+    height: 170px;
+    width: 45%;
+    background-color: rgb(196, 113, 210);
+    padding: 40px 10px 40px 10px;
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1), 0px 0px 28px 3px rgba(91,114,130,1);
+    -moz-box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1),0px 0px 28px 3px rgba(91,114,130,1);
+    box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1),0px 0px 28px 3px rgba(91,114,130,1);
+    animation: MovIzq 1.4s ease-in-out;
+    overflow: hidden;
+}
+@keyframes MovIzq{
+    0%{
+        transform: translateX(600px);
+       
+    }
+    100%{
+        transform: translateX(0px);
+       
+    }
+}
+
+#Login{
+    text-align: center;
+    color: rgb(7, 7, 7) ;
+    height: 170px;
+    width: 45%;
+    background-color: rgb(190, 240, 168);
+    padding: 40px 10px 40px 10px;
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1), 0px 0px 28px 3px rgba(91,114,130,1);
+    -moz-box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1),0px 0px 28px 3px rgba(91,114,130,1);
+    box-shadow: inset 0px 0px 28px 3px rgba(120,186,230,1),0px 0px 28px 3px rgba(91,114,130,1);
+    animation: MovDer 1.4s ease-in-out;
+    
+}
+@keyframes MovDer{
+    0%{
+        transform: translateX(-600px);
+       
+    }
+    100%{
+        transform: translateX(0px);
+       
+    }
+}
+img{
+    width: 5=30%;
+    height: 70%;
+    margin-right: 30px;
+}
+.boton{
+    color: #ffffff;
+    cursor: pointer;  
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0px 0 2em;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%; 
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(72, 180, 165, 0);
+    outline: 1px solid;
+    outline-color: rgba(119, 193, 228, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    border-radius: 20px;
+    background-color: #2b4a46;
+    
+}
+
+.boton:hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(124, 222, 193, 0.895), 0 0 20px rgba(61, 187, 170, 0.966);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+
+.boton:active{
+    background-color: gray;
+}
+
+#Opciones{
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 20px;
+    gap:9.8%;
+  
+}
+

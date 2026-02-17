@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Merriweather", system-ui;
+}
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,231,1) 100%);
+    position: relative;
+    min-height: 100vh;
+
+}
+
+#img-nav{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+#perfil{
+    text-align: center;
+    position: center;
+    border: 2px solid rgba(40, 61, 61, 0.2);
+    background-color: rgb(143, 220, 214) ;
+    backdrop-filter: blur(1000px);
+    width: 50%;
+    border-radius: 2px;
+    padding: 20px;
+    color: black;
+    margin: 0 auto;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    
+}
+
+.user h1{
+    align-items: center;
+}
+.user img{
+    max-width: 90%;
+    max-height: 900px;
+    
+}
+
+#Ver{
+    background-color: transparent;
+    border: 2px solid rgba(180, 180, 180, 0.815);
+    border-radius: 15px;
+    width: 25%;
+    height: 40px;
+    transform: translateY(-50px);
+    color: white;
+}
+
+#nav-buscar{
+    border: 2px solid rgba(255, 14, 14, 0.815);
+    color: white;
+}
+
+#nav-buscar:hover{
+    background-color: red;
+    border: 2px solid rgba(255, 4, 4, 0.767);
+}
+
+
+#Ver:hover{
+    background-color: grey;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+}
+
+.card:hover{
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+}
+
+#listas{
+    text-align: center;
+    position: center;
+    border: 2px solid rgba(40, 61, 61, 0.2);
+    background-color: rgb(143, 220, 214) ;
+    backdrop-filter: blur(1000px);
+    width: 50%;
+    border-radius: 2px;
+    padding: 20px;
+    color: black;
+    margin: 0 auto;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    box-shadow: 0px 0px 18px 0px rgba(42,100,120,1);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#listas h1{
+    text-align: center;
+    width: 100%;
+}
+
+.deseos{
+    display: flex;
+}
+
+.cont{
+    display: flex;
+}
+
+.h h1{
+    background-color: aqua;
+    align-content: center;
+    transform: translateX(middle);
+    max-width: max-content;
+}
+
+/*weas de vista lista*/
+.info-user{
+    height: 320px;
+    
+}
+#eliminar-form{
+    background-color: #6aff34;
+    height: auto;
+    padding-top: 30px;
+    background: rgb(255,27,27);
+background: radial-gradient(circle, rgba(255,27,27,1) 55%, rgba(221,193,67,1) 100%);
+-webkit-box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+-moz-box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+box-shadow: 0px 0px 49px 22px rgba(42,100,120,1);
+}
+.btn-p{
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    transition: .3s ease-in-out;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: rgb(248, 248, 197);
+}
+
+.input-perfil{
+    border-radius: 3px;
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+
+.input-perfil:hover{
+    
+    border: 1px solid gray;
+    transform: scale(1.05);
+}
+
+.btn-p:hover{
+    
+    border: 1px solid rgb(255, 15, 15);
+    transform: scale(1.05);
+    background-color: red   ;
+}
+
+#btn-cambio{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #a7f58a;
+    transition: .3s ease-in-out;
+}
+#btn-cambio:hover{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #6aff34;
+}
+
+#btn-eliminar{
+    display: inline-block;
+    max-width: 200px;
+}
+
+#eliminar-form {
+    margin-top: 120px;
+    margin-bottom: -120px;
+    text-align: center;
+}
+
+/*alch esto no se si se este ocupando en otro html pero por si las flys que se quede*/
+.cont-producto{
+    background-color: whitesmoke;
+    border: 3px solid black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .8);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+    transform: scale(0.98);
+}
+
+.cont-producto:hover{
+    transform: scale(1);
+}
+
+.cards-wrapper{
+    display: flex;
+    color: black;
+}
+
+.img-carrito{
+    width: 12rem;
+}
+
+.text{
+    width: 275%;
+}
+
+.btn-carrito{
+    border-radius: 12px;
+    width: 22%;
+    margin-right: 15px;
+    transform: scale(0.95);
+    
+}
+
+.btn-carrito:hover{
+    background-color: rgb(255, 123, 0);
+    color: white;
+    transform: scale(1.08);
+}
+
+#img-preview {
+    max-width: 150px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.input-error {
+    border-color: red;
+    margin-bottom: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .logOut{
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(250, 180, 180);
+    text-decoration: none;
+    margin-top: 50px;
+    color: black;
+    transition:  .3s ease-in-out;
+}
+.logOut:hover{
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(255, 56, 56);
+    text-decoration: none;
+    margin-top: 50px;
+    color: black;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    font-family: "Merriweather", system-ui;
+}
+body{
+    background: rgb(148,244,214);
+    background: radial-gradient(circle, rgba(148,244,214,0.5999649859943977) 0%, rgba(252,70,107,0.6559873949579832) 100%);    
+    min-height: 100vh;
+    
+}
+
+
+#all{
+    background:rgb(252,70,107,0.6559873949579832);
+    transform: translateY(30%);
+    height: max-content;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 49px 10px rgba(232,93,130,1);
+-moz-box-shadow: 0px 0px 49px 10px rgba(232,93,130,1);
+box-shadow: 0px 0px 49px 10px rgba(232,93,130,1);
+}
+
+#cont-producto{
+    
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Producto{
+    justify-content: center;
+    width: 300px;
+    transform: translateX(20%);
+    
+
+}
+
+.ticket{
+    background-color: rgb(206, 4, 44);
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    color: rgb(255, 228, 228);
+}
+
+.tarjeta{
+    background-color: rgb(206, 4, 44);
+    width: auto;
+    justify-content: center;
+    padding: 20px;
+    color: rgb(255, 215, 215);
+}
+
+.data-tarjeta{
+    
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.vence{
+    display: flex;
+}
+
+#exp-cont{
+    
+    width: 163px;
+    margin: 10px;
+    
+}
+
+#datanombre{
+    background-color: rgb(123, 76, 76);
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+#datanum{
+    background-color: rgb(123, 76, 76);
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+#datanombre:hover{
+    border: 2px solid white;
+    color: white;
+}
+
+#datanum:hover{
+    border: 2px solid white;
+    color: white;
+}
+
+#dataexp{
+    background-color: rgb(52, 52, 52);
+    width: 100%; 
+    border: 2px solid gray;
+    color: white;
+}
+
+#datacod{
+    background-color: rgb(52, 52, 52);
+    width: 100%; 
+    border: 2px solid gray;
+    color: white;
+}
+
+#dataexp:hover{
+    border: 2px solid white;
+    color: white;   
+}
+
+#datacod{
+    background-color: rgb(52, 52, 52);
+    width: 100%; 
+    border: 2px solid gray;
+    color: white;
+}
+
+#btn-pagar{
+    background-color:rgb(121, 237, 121);
+    width: 94%;
+    color: white;
+    margin: 10px;
+    transition: .3s ease-in-out;
+}
+
+#btn-pagar:hover{
+    border: 2px solid rgb(115, 244, 30);
+    transform: scale(1.05);
+    color: black;
+}
+.backArrow{
+    background-color: #427388;
+    width: min-content;
+    padding: 20px 10px 20px 10px;
+    border-radius: 200px;
+    transition: .3s ease-in-out;
+    position: absolute;
+    z-index: 30;    
+    transform:translate(100px,130px);
+    text-decoration: none;
+}
+.backArrow:hover{
+    background-color: #1b2224;
+    width: min-content;
+    padding: 20px 30px 20px 30px;
+    border-radius: 200px;
+}
+.backArrow:link,:visited,:active{
+    color: white;
+}

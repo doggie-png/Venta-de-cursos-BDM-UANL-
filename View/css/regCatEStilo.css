@@ -1,0 +1,31 @@
+.formRegCat{
+    background-color: rgb(207, 246, 245);
+    padding: 30px 40px 30px 40px;
+    margin: 0 auto;
+    margin-top: 130px;
+    border-radius: 20px;
+    text-align: center;
+    width: 55vw;
+    -webkit-box-shadow: 0px 0px 37px 13px rgba(79,104,117,1);
+    -moz-box-shadow: 0px 0px 37px 13px rgba(79,104,117,1);
+    box-shadow: 0px 0px 37px 13px rgba(79,104,117,1);
+}
+input{
+    width: 50%;
+    padding: 0pc 20px 0px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(210, 250, 151);
+    transition: .3s ease-in-out;
+}
+button:hover{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(153, 255, 0);
+}
